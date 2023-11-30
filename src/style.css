@@ -1,0 +1,31 @@
+* {
+  font-family: Helvetica, sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.drag-item {
+  --dim: 64px;
+  width: var(--dim);
+  height: var(--dim);
+  background-color: blue;
+  border-radius: 100%;
+}
+
+[data-droppable][data-here] {
+  background-color: red;
+}
+
+.drop-item {
+  width: 100%;
+  min-height: 256px;
+  border-radius: 4px;
+  background-color: lightblue;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
